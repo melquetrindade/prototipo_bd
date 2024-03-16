@@ -1,0 +1,167 @@
+=== Cliente ===
+{
+    "cpf": "12345678900",
+    "rg": "111222333",
+    "nome": "José",
+    "email": "jose@gmail.com",
+    "numTelefone": "84999112233",
+    "dataNascimento": "11/08/1974"
+} 
+
+=== Fornecedore ===
+{
+    "cnpj": "3477895745738",
+    "nome": "Vaquinha Mococa LTDA",
+    "email": "vaquinha@gmail.com",
+    "numTelefone": "84991296763",
+    "dataNascimento": "17/04/1980"
+}
+
+=== Funcionário ===
+{
+    "cpf": "784275897",
+    "cargo": "Operador de Caixa",
+    "salario": 1420.00,
+    "cargaHoraria": 42,
+    "nome": "Ana Letícia",
+    "email": "ana@gmail.com",
+    "numTelefone": "84998574732",
+    "dataNascimento": "09/03/2000"
+}
+
+=== Estado ===
+{
+    "owner": 1,
+    "nome": "Rio Grande do Sul"
+}
+
+=== Cidade ===
+{
+    "owner": "1",
+    "nome": "Parelhas",
+    "cep": "59360000"
+}
+
+=== Bairro ===
+{
+    "owner": "1",
+    "nome": "Maria Terceira"
+}
+
+=== Endereço ===
+{
+    "owner": "1",
+    "rua": "Brasilino Gomes Meira",
+    "numCasa": "311",
+    "complemento": "Casa"
+}
+
+=== Produto ===;
+{
+    "codigoBarras": "1234567",
+    "tipo": "Alimentício",
+    "nome": "Queijo",
+    "dataValidade": "30/10/2024",
+    "qtdMinima": 5,
+    "quantidade": 33,
+    "valor": 20.00
+}
+
+=== Entrada_Mercadoria ===
+{
+    "ownerFornecedor": "3",
+    "quantidade": 20,
+    "data": "14/03/2024",
+    "valor": 200.00
+}
+
+=== EntradaMercadoria_Produto === 
+{
+    "ownerProduto": 1,
+    "ownerEntradaMercadoria": 1 
+}
+
+=== Venda === 
+{
+    "cliente": 1,
+    "data": "14/03/2024",
+    "total": 51.99
+}
+
+=== VendaProduto ===
+{
+    "ownerVenda": 1,
+    "ownerProduto": 1,
+    "quantidade": 2,
+    "valor": 5.00
+}
+
+=== Metodo_Pagamento === 
+{
+    "metodo": "Espécie",
+    "valor": 100.00
+}
+
+=== Vendas_MetodosPagamentos ===
+{
+    "ownerVenda": 1,
+    "ownerMetodoPagamento": [
+        1, 2
+    ]
+}
+
+=== EntradaMercadoria_MetodoPagamento ===
+{
+    "ownerEntradaMercadoria": 1,
+    "ownerMetodoPagamento": [
+        1, 2
+    ]
+}
+
+=== Nota Fiscal ===
+{
+    "ownerVenda": 1,
+    "data": "14/03/2024 - 10:04",
+    "listVendaProduto": [
+        1, 3
+    ]
+}
+
+=== Conta ===
+{
+    "valor": 200.00,
+    "dataVencimento": "29/11/2024",
+    "tipoReceber": true,
+    "ownerVenda": 
+    "ownerEntradaMercadoria":
+}
+
+=== Caixa ===
+{
+    "valorInicial": 100.00,
+    "valorAtual": 100.00,
+    "dataHoraAberturaAtual": "13/03/2024 - 07:00",
+    "isOpen": false
+}
+
+=== Dia_Caixa ===
+{
+    "dataHoraAbertura": "14/03/2024 - 07:00",
+    "dataHoraEncerramento": "14/03/2024 - 18:00",
+    "valorInicial": 100.00,
+    "valorFinal": 846.65
+}
+
+=== Caixa_DiaCaixa ===
+{
+    "ownerCaixa": 1,
+    "ownerDiaCaixa": 1
+}
+
+=== Pagamentos ===
+{
+    "ownerCaixa": 1,
+    "ownerConta": 1,
+    "data": "14/03/2024",
+    "valor": 45.99
+}
